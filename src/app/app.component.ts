@@ -5,7 +5,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { EmployeeModel } from './model';
 import { KENDO_GRID } from '@progress/kendo-angular-grid';
 import { DisplayEmpComponent } from './display-emp/display-emp.component';
-import { NavbarComponent } from "./navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
@@ -14,9 +13,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
     CommonModule, 
     CommonModule, 
     ReactiveFormsModule, 
-    KENDO_GRID, 
-    NavbarComponent,
-    
+    KENDO_GRID,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
