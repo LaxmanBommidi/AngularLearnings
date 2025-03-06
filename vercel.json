@@ -1,0 +1,6 @@
+{
+    "builds": [{ "src": "angular.json", "use": "@vercel/angular" }],
+    "functions": {
+      "memory": 1024
+    }
+  }
