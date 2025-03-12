@@ -1,5 +1,5 @@
 import { Component , Input} from '@angular/core';
-import { KENDO_GRID } from '@progress/kendo-angular-grid';
+import { KENDO_GRID } from "@progress/kendo-angular-grid";
 import { EmployeeModel } from '../model';
 @Component({
   selector: 'app-display-emp',
