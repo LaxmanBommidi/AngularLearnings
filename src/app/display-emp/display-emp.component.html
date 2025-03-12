@@ -1,5 +1,7 @@
 <h2 class="display-6">Employee List </h2>
-<kendo-grid [data]="empList">
+<kendo-grid [data]="empList"
+  (remove)="removeHandler($event)"
+  >
   
   <kendo-grid-column field="empid" title="Employee ID" [width]="100"></kendo-grid-column>
   <kendo-grid-column field="name" title="Name" [width]="120"></kendo-grid-column>
