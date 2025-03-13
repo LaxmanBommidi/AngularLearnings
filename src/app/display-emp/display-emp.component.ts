@@ -18,4 +18,10 @@ export class DisplayEmpComponent {
       localStorage.setItem("EmpData", JSON.stringify(this.empList))
     }
   }
+
+  public clearAll(){
+    this.empList = [];
+    localStorage.setItem('EmpData',JSON.stringify(this.empList));
+  }
+
 }

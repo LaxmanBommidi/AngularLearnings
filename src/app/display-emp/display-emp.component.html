@@ -8,11 +8,11 @@
   <kendo-grid-column field="city" title="City" [width]="120"></kendo-grid-column>
   <kendo-grid-column field="address" title="Address" [width]="200"></kendo-grid-column>
   <kendo-grid-column field="contactNo" title="Contact No" [width]="120"></kendo-grid-column>
-  <kendo-grid-column field="emailId" title="Email ID" [width]="200"></kendo-grid-column>
+  <kendo-grid-column field="emailId" title="Email ID" [width]="150"></kendo-grid-column>
   <kendo-grid-column field="pinCode" title="Pin Code" [width]="100"></kendo-grid-column>
   <kendo-grid-column field="state" title="State" [width]="100"></kendo-grid-column>
 
-  <kendo-grid-command-column title="command" [width]="220">
+  <kendo-grid-command-column title="command" [width]="200">
     <ng-template kendoGridCellTemplate let-isNew="isNew">
       <button kendoGridEditCommand [primary]="true">Edit</button>
       <button kendoGridRemoveCommand>Remove</button>
@@ -20,3 +20,5 @@
   </kendo-grid-command-column>
 
 </kendo-grid>
+
+<button (click)="clearAll()">Clear All</button>
